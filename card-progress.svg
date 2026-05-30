@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".45" r=".78"><stop stop-color="#172ca6"/><stop offset=".55" stop-color="#08093a"/><stop offset="1" stop-color="#040414"/></radialGradient>
+    <linearGradient id="bar" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#ff3bdd"/><stop offset="1" stop-color="#1fe8ff"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="420" height="260" rx="10" fill="url(#bg)"/>
+  <g opacity=".13" stroke="#45eaff"><path d="M0 42h420M0 84h420M0 126h420M0 168h420M0 210h420M54 0v260M108 0v260M162 0v260M216 0v260M270 0v260M324 0v260M378 0v260"/></g>
+  <g fill="#fff" font-family="Arial" font-size="12" font-weight="700"><text x="26" y="34">BALL</text><text x="305" y="34">PROGRESS</text></g>
+  <g filter="url(#glow)">
+    <g fill="url(#bar)"><rect x="78" y="192" width="24" height="28" rx="3"/><rect x="122" y="176" width="24" height="44" rx="3"/><rect x="166" y="154" width="24" height="66" rx="3"/><rect x="210" y="126" width="24" height="94" rx="3"/><rect x="254" y="98" width="24" height="122" rx="3"/><rect x="298" y="62" width="24" height="158" rx="3"/></g>
+    <path d="M63 178c85-19 168-74 247-144" fill="none" stroke="#ff3bdd" stroke-width="5"/>
+    <path d="M286 34h45v45M310 34l-2 2" fill="none" stroke="#ff3bdd" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

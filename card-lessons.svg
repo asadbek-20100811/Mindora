@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260">
+  <defs>
+    <radialGradient id="bg" cx=".42" cy=".3" r=".8"><stop stop-color="#18207b"/><stop offset=".55" stop-color="#080b38"/><stop offset="1" stop-color="#040517"/></radialGradient>
+    <linearGradient id="neon" x1="0" x2="1"><stop stop-color="#34e9ff"/><stop offset=".52" stop-color="#914cff"/><stop offset="1" stop-color="#ff38dc"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="420" height="260" rx="10" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#3ff0ff"><path d="M0 42h420M0 84h420M0 126h420M0 168h420M0 210h420M54 0v260M108 0v260M162 0v260M216 0v260M270 0v260M324 0v260M378 0v260"/></g>
+  <text x="18" y="25" fill="#dfe9ff" font-family="Arial" font-size="12" font-weight="700">LEKTSIYA</text>
+  <g font-family="Arial" font-size="10" font-weight="700" fill="#eef7ff">
+    <text x="80" y="54">FAN 1</text><text x="154" y="54">FAN 2</text><text x="228" y="54">FAN 3</text><text x="302" y="54">FAN 4</text>
+  </g>
+  <g filter="url(#glow)">
+    <circle cx="86" cy="121" r="42" fill="none" stroke="#ff37e0" stroke-width="7"/>
+    <path d="M76 96l38 25-38 25z" fill="#fff"/>
+    <path d="M137 122l145-35 102 31-145 39z" fill="#15155b" stroke="#9258ff" stroke-width="3"/>
+    <path d="M175 134l64 20 85-24" fill="none" stroke="#31eaff" stroke-width="2" opacity=".8"/>
+    <path d="M284 87v64" stroke="#ff35da" stroke-width="3"/><circle cx="284" cy="154" r="6" fill="#ff35da"/>
+    <path d="M69 187c38-31 78-19 110 18 40-35 86-33 131-6v19c-43-20-87-18-128 10-36-26-74-38-113-16z" fill="#121861" stroke="#8e5bff" stroke-width="3"/>
+    <path d="M81 198c32-12 63-5 93 15M193 212c33-16 67-20 102-8" stroke="#35efff" stroke-width="2" opacity=".85"/>
+  </g>
+</svg>

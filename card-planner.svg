@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260">
+  <defs>
+    <radialGradient id="bg" cx=".48" cy=".42" r=".78"><stop stop-color="#172aa0"/><stop offset=".55" stop-color="#08093a"/><stop offset="1" stop-color="#040414"/></radialGradient>
+    <linearGradient id="book" x1="0" x2="1"><stop stop-color="#235fff"/><stop offset="1" stop-color="#ff35dc"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="420" height="260" rx="10" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#45eaff"><path d="M0 42h420M0 84h420M0 126h420M0 168h420M0 210h420M54 0v260M108 0v260M162 0v260M216 0v260M270 0v260M324 0v260M378 0v260"/></g>
+  <g filter="url(#glow)">
+    <rect x="35" y="42" width="158" height="150" rx="10" fill="#15145c" stroke="#884cff" stroke-width="4"/>
+    <path d="M35 72h158" stroke="#ff3bdd" stroke-width="4"/><g fill="#3fefff"><rect x="57" y="96" width="15" height="15" rx="2"/><rect x="88" y="96" width="15" height="15" rx="2"/><rect x="119" y="96" width="15" height="15" rx="2"/><rect x="150" y="96" width="15" height="15" rx="2"/></g>
+    <g fill="none" stroke="#58f2ff" stroke-width="3"><path d="M58 133l8 8 17-21M58 162l8 8 17-21M96 133l8 8 17-21M96 162l8 8 17-21M134 133l8 8 17-21M134 162l8 8 17-21"/></g>
+    <g transform="translate(223 108)"><rect width="112" height="20" rx="5" fill="url(#book)"/><rect x="-14" y="132" width="132" height="20" rx="5" fill="url(#book)"/><rect x="-2" y="24" width="126" height="22" rx="5" fill="#2332a8"/><rect x="-20" y="50" width="132" height="22" rx="5" fill="#7430c8"/><rect x="3" y="76" width="122" height="22" rx="5" fill="#2130a5"/></g>
+    <circle cx="285" cy="65" r="33" fill="#40229c" stroke="#7d5bff" stroke-width="4"/><path d="M285 45v22l16 10" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

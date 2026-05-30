@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260">
+  <defs>
+    <radialGradient id="bg" cx=".5" cy=".45" r=".8"><stop stop-color="#1724a2"/><stop offset=".52" stop-color="#09093c"/><stop offset="1" stop-color="#040414"/></radialGradient>
+    <linearGradient id="crown" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#5af0ff"/><stop offset=".45" stop-color="#8d4cff"/><stop offset="1" stop-color="#ff32d7"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="420" height="260" rx="10" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#56eaff"><path d="M0 42h420M0 84h420M0 126h420M0 168h420M0 210h420M54 0v260M108 0v260M162 0v260M216 0v260M270 0v260M324 0v260M378 0v260"/></g>
+  <ellipse cx="210" cy="210" rx="130" ry="20" fill="#1b1eff" opacity=".35" filter="url(#glow)"/>
+  <g filter="url(#glow)" stroke-linejoin="round">
+    <path d="M82 83l48 63 38-93 43 89 42-105 43 105 42-74v112H82z" fill="url(#crown)" stroke="#5af0ff" stroke-width="4"/>
+    <path d="M104 188h212l-19 26H123z" fill="#34147a" stroke="#ff45dd" stroke-width="4"/>
+    <path d="M210 95l31 48-31 49-31-49z" fill="#ff37da" stroke="#ffd2ff" stroke-width="3"/>
+    <path d="M210 116l14 27-14 28-14-28z" fill="#7836ff"/>
+    <g fill="#62f2ff" stroke="#ae69ff" stroke-width="3"><circle cx="82" cy="82" r="9"/><circle cx="168" cy="53" r="9"/><circle cx="253" cy="37" r="9"/><circle cx="338" cy="68" r="9"/></g>
+  </g>
+</svg>
