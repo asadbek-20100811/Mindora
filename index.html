@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mindora - AI Education Platform</title>
+    <link rel="icon" type="image/png" href="logotip.png" />
+    <link rel="apple-touch-icon" href="logotip.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="landing" class="landing">
+      <nav class="landing-nav">
+        <div class="auth-actions">
+          <button class="ghost-btn" data-open-auth="login" type="button">Kirish</button>
+          <button class="primary-btn" data-open-auth="register" type="button">Ro'yxatdan o'tish</button>
+        </div>
+      </nav>
+
+      <section class="hero landing-home" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">AI yordamida shaxsiy ta'lim operatsion tizimi</p>
+          <h1>AI yordamida kelajagingni kashf et!</h1>
+          <p>Mindora o'quvchining ro'yxatdan o'tgan profiliga qarab darslar, maqsadlar, xotira xaritasi, tavsiyalar va progressni avtomatik moslaydi.</p>
+          <div class="hero-actions">
+            <button class="primary-btn" data-open-auth="register" type="button">Boshlash bepul</button>
+            <button class="ghost-btn" data-open-auth="login" type="button">Kirish</button>
+          </div>
+        </div>
+        <div class="hero-device">
+          <img src="assets/hero-student.png" alt="Mindora AI dashboard preview" />
+        </div>
+      </section>
+
+      <section class="landing-stats landing-home">
+        <article><strong data-landing-stat="users">0</strong><span>Foydalanuvchilar</span></article>
+        <article><strong data-landing-stat="tests">0</strong><span>Testlar</span></article>
+        <article><strong data-landing-stat="subjects">0</strong><span>Mavzular</span></article>
+        <article><strong data-landing-stat="ai">Faol</strong><span>AI yordam</span></article>
+      </section>
+
+    </main>
+
+    <section id="auth-modal" class="auth-modal" aria-hidden="true">
+      <div class="auth-card">
+        <button class="close-btn" id="close-auth" type="button">×</button>
+        <div class="auth-brand-panel">
+          <div class="auth-brand-mark">
+            <img src="logotip.png" alt="Mindora logotipi" />
+          </div>
+          <div class="auth-brand-copy">
+            <span class="auth-brand-badge">✦ Mindora</span>
+            <h2><span>AI</span> yordamida o'rganish <span>har kuni</span> osonroq</h2>
+            <p>Shaxsiy dashboard, darslar, testlar va AI Ustoz bitta joyda.</p>
+          </div>
+        </div>
+        <div class="auth-form-panel">
+          <div class="auth-tabs">
+            <button id="login-tab" class="active" type="button">Kirish</button>
+            <button id="register-tab" type="button">Ro'yxatdan o'tish</button>
+          </div>
+          <div class="auth-title">
+            <h2 id="auth-title">Tizimga kirish</h2>
+            <p id="auth-subtitle">Farzand va yutuqlaringizni kuzating</p>
+          </div>
+          <form id="auth-form">
+            <label id="name-row">Ism<input id="name-field" type="text" placeholder="Ismingiz" /></label>
+            <label>Email<input id="email-field" type="email" placeholder="email@example.com" required /></label>
+            <label id="phone-row">Telefon raqam<input id="phone-field" type="tel" placeholder="+998 90 123 45 67" /></label>
+            <label>Parol<input id="password-field" type="password" placeholder="Parol" required /></label>
+            <label id="gender-row">Jins
+              <select id="gender-field">
+                <option value="male">O'g'il bola</option>
+                <option value="female">Qiz bola</option>
+              </select>
+            </label>
+            <button class="primary-btn full" id="auth-submit" type="submit">Kirish</button>
+          </form>
+          <p class="hint" id="auth-switch-copy">Hisobingiz yo'qmi? <button id="auth-switch" type="button">Ro'yxatdan o'ting</button></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="app" class="app hidden">
+      <aside class="sidebar">
+        <div class="mini-profile" id="mini-profile"></div>
+        <nav id="app-nav" class="app-nav"></nav>
+        <button class="upgrade-btn" type="button" aria-label="Mindora Premium"></button>
+      </aside>
+
+      <main class="app-main">
+        <header class="app-topbar">
+          <div class="top-icons profile-menu-wrap">
+            <button class="profile-button" id="profile-shortcut" type="button"></button>
+            <div class="profile-menu" id="profile-menu" aria-hidden="true"></div>
+          </div>
+        </header>
+        <section id="page-root" class="page-root"></section>
+      </main>
+    </section>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js?v=three-dark-unique-tests"></script>
+  </body>
+</html>
